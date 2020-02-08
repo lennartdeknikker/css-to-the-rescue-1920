@@ -12,80 +12,142 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>basecamp</li>
-        <li>camp 2</li>
-        <li>camp 3</li>
-        <li>camp 4</li>
-        <li>camp 5</li>
-      </ul>
-    </nav>
-    <div class="background-stars"></div>
-    <div class="background-twinkling"></div>
-    <div class="background-clouds"></div>
-    <div class="container y-scroll y-mandatory">
-      <div class="wrapper">
-        <div class="view" id="camp5">
-          <div class="mountain-skew-to-top">
-            <div class="rope"></div>
-          </div>
-          <div class="content">
-            <h1>Camp 5</h1>
-            <p class="info">hallo</p>
-          </div>
-        </div>
-        <div class="view" id="camp4">
-          <div class="mountain-skew-to-bottom">
-            <div class="rope"></div>
-            <a href="#camp5" class="button">
-              <img src="./img/arrow.png" alt="" class="image-arrow" />
-            </a>
-          </div>
-          <div class="content">
-            <h1>Camp 4</h1>
-            <p class="info">hallo</p>
-          </div>
-        </div>
-        <div class="view" id="camp3">
-          <div class="mountain-skew-to-top">
-            <div class="rope"></div>
-            <a href="#camp4" class="button">
-              <img src="./img/arrow.png" alt="" class="image-arrow" />
-            </a>
-          </div>
-          <div class="content">
-            <h1>Camp 3</h1>
-            <p class="info">hallo</p>
-          </div>
-        </div>
-        <div class="view" id="camp2">
-          <div class="mountain-skew-to-bottom">
-            <div class="rope"></div>
-            <a href="#camp3" class="button">
-              <img src="./img/arrow.png" alt="" class="image-arrow" />
-            </a>
-          </div>
-          <div class="content">
-            <h1>Camp 2</h1>
-            <p class="info">hallo</p>
-          </div>
-        </div>
-        <div class="view">
-          <div class="mountain-skew-to-top">
-            <div class="rope"></div>
-            <a href="#camp2" class="button">
-              <img src="./img/arrow.png" alt="" class="image-arrow" />
-            </a>
-          </div>
-          <input type="checkbox" name="alpaca" id="alpaca" class="checkbox" />
-          <label for="alpaca" class="alpaca"></label>
-          <div class="content">
-            <h1>Basecamp</h1>
-            <p class="info">hallo</p>
-          </div>
-        </div>
+    <!-- SECTION CONTAINING BACKGROUND ELEMENTS -->
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <!-- SECTION CONTAINING ALL VIEWS -->
+    <section>
+      <!-- ZERO STATE VIEW -->
+      <div>
+        <article>
+          <h1>Have you ever dreamed of climbing the Mount Everest?</h1>
+          <a href="#basecamp"><button>START AT BASECAMP</button></a>
+        </article>
       </div>
-    </div>
+      <!-- TOP VIEW -->
+      <div id="top">
+        <div>
+          <div></div>
+        </div>
+        <p class="flag">
+          <span class="canvas">
+            <span class="red"></span>
+            <span class="white"></span>
+            <span class="red"></span>
+          </span>
+        </p>
+        <article class="content">
+          <h1>The summit (8850 m / 29035 ft.)</h1>
+          <p class="info">
+            A cold, white moon rises from below, but you hardly glance at it or
+            even the bright twinkle of Universe above. The adrenaline keeps your
+            body moving. And then, suddenly, after hours and hours of despair,
+            you notice a thin blue beam of light at the horizon. Sunrise! If you
+            are lucky, now is the time for the fabled mountain ghost. The
+            mountain projects itself onto the morning fog. The shadow towers in
+            front of you like a giant mirage. Beneath lies the world in all its
+            glory, glowing in the rising sun. You feel the warmth and all hope
+            returning.
+          </p>
+        </article>
+      </div>
+      <!-- CAMP 4 -->
+      <div id="camp4">
+        <div>
+          <div></div>
+        </div>
+        <a href="#top" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <article>
+          <h1>Camp 3, the Deathzone (8000 m / 26000 ft.)</h1>
+          <p class="info">
+            Camp 4 sits on a plateau resembling a moonscape. You are at the edge
+            of the atmosphere and the sky owns a strange, dark blue color. It is
+            surely the closest you can get to space on earth. Only a small climb
+            above camp, you look down the Tibetan plateau with it's vast brown
+            plains, white glaciers and the other alpine giants - Kanchenjunga,
+            Lhotse, Makalu -in the distance. It's all magic and unreal.
+          </p>
+        </article>
+      </div>
+      <!-- CAMP 3 -->
+      <div id="camp3">
+        <div>
+          <div></div>
+        </div>
+        <a href="#camp4" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <article>
+          <h1>Camp 2, Lhotse wall (6800m - 8000 m / 22300 ft - 26300 ft.)</h1>
+          <p class="info">
+            Imagine sliding a fun, icy slope on a sunny winter's day. Only this
+            one is 1200 meter (4000 ft) high. This is not a place to play. The
+            dangerous part is to hang on to rope of dubious strength and to
+            change carabiners between the ropes. You might feel not too clear in
+            your head, especially upon coming down, but it's crucial to
+            concentrate. One slip and you are gone, far higher up than you had
+            intended really.
+          </p>
+        </article>
+      </div>
+      <!-- CAMP 2 -->
+      <div id="camp2">
+        <div>
+          <div></div>
+        </div>
+        <a href="#camp3" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <article>
+          <h1>
+            Camp 1, Valley of Silence (6100 m - 6400 m / 20000 - 21000 ft.)
+          </h1>
+          <p class="info">
+            This is a vast, flat area of endless snow, deep crevasses and
+            mountain walls frequently washed by avalanches. Here we set up camp
+            1. At night we listen to the deep, murmuring cracking sounds under
+            our tents. It is the crevasses opening and closing deep down in the
+            glacier beneath. You keep your fingers crossed that it won't happen
+            right under your tent. At least not just now, while you are in it.
+            Pounding headaches torture you. But it is here that for the first
+            time, just a few steps around a corner, we gain first close sight of
+            Everest.
+          </p>
+        </article>
+        <div class="plane"></div>
+      </div>
+      <!-- BASECAMP -->
+      <div id="basecamp">
+        <div>
+          <div></div>
+        </div>
+        <a href="#camp2" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <input type="checkbox" name="alpaca" id="alpaca" class="checkbox" />
+        <label for="alpaca" class="alpaca"></label>
+        <article>
+          <h1>Base Camp (5400 m / 17700 ft.)</h1>
+          <p class="info">
+            Base Camp is like a Formula One car racing depot. Satellite phones
+            buzz in international tents as the worlds languages mix in thrilling
+            accounts of the latest. Journalists, families and climbers exchange
+            news and emotions between the mountain and the world. For no alpine
+            peak fires imagination like Mount Everest.
+          </p>
+        </article>
+      </div>
+    </section>
+    <footer>
+      All information is acquired from:
+      <a href="https://www.mounteverest.net/expguide/route.htm"
+        >MountEverest.net</a
+      >
+    </footer>
   </body>
 </html>

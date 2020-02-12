@@ -1,6 +1,7 @@
 /* GLOBAL DECLARATIONS */
 :root {
   --rope-from-left: 14%;
+  --alpaca-top: 150px;
 }
 * {
   cursor: url("../img/cursor.png"), auto;
@@ -8,7 +9,8 @@
 }
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -113,6 +115,53 @@ section:nth-child(2) > div:nth-child(2) {
 section:nth-child(2) > div:nth-child(2) > div:first-child {
   clip-path: polygon(0 0, 12% 80%, 31% 80%, 39% 100%, 17% 100%, 0 100%);
 }
+
+/* Flag */
+section:nth-child(2) > div:nth-child(2) .canvas {
+  cursor: pointer;
+  display: flex;
+  height: 6em;
+  width: 10em;
+  background: linear-gradient(
+    90deg,
+    red 33.33%,
+    white 33.33%,
+    white 66.66%,
+    red 66.66%
+  );
+  animation: flag-wave 2s linear infinite;
+  position: relative;
+  right: 4px;
+  top: 10px;
+}
+section:nth-child(2) > div:nth-child(2) input[type="checkbox"] {
+  display: none;
+}
+section:nth-child(2) > div:nth-child(2) input[type="checkbox"]:checked + label {
+  background: linear-gradient(
+    red 33.33%,
+    white 33.33%,
+    white 66.66%,
+    blue 66.66%
+  );
+}
+@keyframes flag-wave {
+  from {
+    background-position: 0 0;
+    width: 10em;
+    transform: skewX(0) rotate(0);
+  }
+  50% {
+    width: 5em;
+    transform: skewX(5deg) rotate(10deg);
+  }
+  to {
+    background-position: 0 0;
+    width: 10em;
+    transform: skewX(0) rotate(0);
+  }
+}
+
 /* CAMP 4 */
 section:nth-child(2) > div:nth-child(3) {
   background: linear-gradient(rgb(45, 47, 156, 0), rgb(45, 47, 156));
@@ -192,7 +241,6 @@ section:nth-child(2) > div > div:first-child {
   width: 40%;
   height: 100%;
   background-color: white;
-  min-width: 20em;
 }
 
 /* arrow signs */
@@ -249,41 +297,39 @@ section:nth-child(2) > div article p {
   padding: 2em;
 }
 
-input[type="checkbox"] + label {
-  width: 20em;
-  height: 20em;
+/* Alpaca */
+section:nth-child(2) > div:nth-child(6) input[type="checkbox"] + label {
+  width: 20vw;
+  height: 20vw;
   background: url("../img/alpaca.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  position: relative;
-  top: 5em;
+  position: absolute;
+  left: 60%;
+  transform: translateY(var(--alpaca-top));
   display: flex;
   cursor: pointer;
 }
-
-input[type="checkbox"] + label:hover {
-  transform: rotate(15deg);
+section:nth-child(2) > div:nth-child(6) input[type="checkbox"] + label:hover {
+  transform: translate(0, var(--alpaca-top)) rotate(15deg);
 }
-
-input[type="checkbox"]:checked + label {
+section:nth-child(2) > div:nth-child(6) input[type="checkbox"]:checked + label {
   animation: walk-away 3s ease forwards;
 }
-
-input[type="checkbox"] {
+section:nth-child(2) > div:nth-child(6) input[type="checkbox"] {
   display: none;
 }
-
 @keyframes walk-away {
   from {
-    transform: translate(0, 0) rotate(0);
+    transform: translate(0, var(--alpaca-top)) rotate(0);
   }
   10% {
-    transform: translate(0, 0) rotate(-10deg);
+    transform: translate(0, calc(var(--alpaca-top) + 30px)) rotate(-10deg);
   }
   to {
-    transform: translate(-100vw, 0) rotate(15deg);
+    transform: translate(-100vw, calc(var(--alpaca-top) + 50px)) rotate(15deg);
   }
 }
 
@@ -292,7 +338,6 @@ footer {
   padding: 1em;
   background-color: black;
   position: relative;
-  top: -3em;
 }
 
 footer a {
@@ -313,41 +358,6 @@ footer a {
   border-radius: 6px;
 }
 
-.canvas {
-  display: flex;
-  height: 6em;
-  width: 10em;
-  background: linear-gradient(
-    90deg,
-    red 33.33%,
-    white 33.33%,
-    white 66.66%,
-    red 66.66%
-  );
-  animation: flag-wave 2s linear infinite;
-  position: relative;
-  right: 4px;
-  top: 10px;
-}
-
-@keyframes flag-wave {
-  from {
-    background-position: 0 0;
-    width: 10em;
-    transform: skewX(0) rotate(0);
-  }
-  50% {
-    background-position: -10px 10px;
-    width: 5em;
-    transform: skewX(5deg) rotate(10deg);
-  }
-  to {
-    background-position: 0 0;
-    width: 10em;
-    transform: skewX(0) rotate(0);
-  }
-}
-
 .plane {
   animation: plane 10s linear infinite;
   position: absolute;
@@ -366,7 +376,7 @@ footer a {
   }
   30% {
     left: 110vw;
-    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 2.1);
     z-index: 10;
   }
   31% {

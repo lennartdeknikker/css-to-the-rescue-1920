@@ -12,14 +12,15 @@
     <title>Document</title>
   </head>
   <body>
+    <input type="checkbox" name="flag" id="flag" class="checkbox" />
     <!-- SECTION CONTAINING BACKGROUND ELEMENTS -->
-    <section>
+    <section class="bg-test">
       <div></div>
       <div></div>
       <div></div>
     </section>
     <!-- SECTION CONTAINING ALL VIEWS -->
-    <section>
+    <section class="story-test">
       <!-- ZERO STATE VIEW -->
       <div>
         <article>
@@ -31,14 +32,18 @@
       <div id="top">
         <div>
           <div></div>
+          <div></div>
+        </div>
+        <div>
+          <a href="#camp4">
+            <button>
+              The sun came up, you've stayed all night. It's time to go down,
+              don't you think?
+            </button>
+          </a>
         </div>
         <p class="flag">
-          <input type="checkbox" name="flag" id="flag" class="checkbox" />
-          <label for="flag" class="canvas">
-            <span class="red"></span>
-            <span class="white"></span>
-            <span class="red"></span>
-          </label>
+          <label for="flag" class="canvas"></label>
         </p>
         <article class="content">
           <h1>The summit (8850 m / 29035 ft.)</h1>
@@ -59,8 +64,14 @@
       <div id="camp4">
         <div>
           <div></div>
+          <div>
+            <img src="./img/climber.png" class="climber" alt="" />
+          </div>
         </div>
         <a href="#top" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <a href="#camp3" class="button">
           <img src="./img/arrow.png" alt="" class="image-arrow" />
         </a>
         <article>
@@ -79,8 +90,12 @@
       <div id="camp3">
         <div>
           <div></div>
+          <div></div>
         </div>
         <a href="#camp4" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <a href="#camp2" class="button">
           <img src="./img/arrow.png" alt="" class="image-arrow" />
         </a>
         <article>
@@ -100,8 +115,12 @@
       <div id="camp2">
         <div>
           <div></div>
+          <div></div>
         </div>
         <a href="#camp3" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <a href="#basecamp" class="button">
           <img src="./img/arrow.png" alt="" class="image-arrow" />
         </a>
         <article>
@@ -126,8 +145,12 @@
       <div id="basecamp">
         <div>
           <div></div>
+          <div></div>
         </div>
         <a href="#camp2" class="button">
+          <img src="./img/arrow.png" alt="" class="image-arrow" />
+        </a>
+        <a href="#top" class="button">
           <img src="./img/arrow.png" alt="" class="image-arrow" />
         </a>
         <input type="checkbox" name="alpaca" id="alpaca" class="checkbox" />

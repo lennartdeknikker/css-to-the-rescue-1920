@@ -16,7 +16,7 @@ The context chosen for my page is the dark-mode.
 
 Below you can see the difference as implemented:
 ### Dark Mode
-
+![Dark Mode](https://github.com/lennartdeknikker/css-to-the-rescue-1920/blob/master/wiki-resources/dark-mode.png)
 ### Light Mode
-
+![Dark Mode](https://github.com/lennartdeknikker/css-to-the-rescue-1920/blob/master/wiki-resources/light-mode.png)
 

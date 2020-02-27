@@ -14,3 +14,10 @@ footer {
 h1:first-of-type {
   font-size: 12pt;
 }
+
+body > img:last-of-type {
+  display: block;
+  width: 30mm;
+  margin-top: 30mm;
+  transform: scaleX(-1);
+}

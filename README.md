@@ -20,3 +20,24 @@ Below you can see the difference as implemented:
 ![Dark Mode](https://github.com/lennartdeknikker/css-to-the-rescue-1920/blob/master/wiki-resources/dark-mode.png)
 ### Light Mode
 ![Dark Mode](https://github.com/lennartdeknikker/css-to-the-rescue-1920/blob/master/wiki-resources/light-mode.png)
+
+I chose to add a print stylesheet as well.
+
+## Additional restrictions
+- I chose not to use any square, circular or triangular shapes, but later on I cheated when adding the buttons and text fields, since I didn't think it would help these functional elements to be interpreted well.
+- The design also responds to time/weather, which can be changed at the top of the mountain by clicking on the flag.
+
+## Explored properties
+- scroll-behavior
+- overflow
+- cursor
+- animation (and keyframes)
+- z-index
+- scroll-snap-align
+- scroll-snap-stop
+- resize
+- clip-path
+- transition
+- transform
+- background (gradients)
+- opacity

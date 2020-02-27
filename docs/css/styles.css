@@ -613,3 +613,7 @@ input[type="checkbox"]:first-child:checked
     z-index: 0;
   }
 }
+
+body > img:last-of-type {
+  display: none;
+}

@@ -1,0 +1,16 @@
+
+img, input, button {
+  display: none;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+h1:first-of-type {
+  font-size: 12pt;
+}

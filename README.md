@@ -1,4 +1,5 @@
 # Climbing the Mount Everest
+![screenshot](https://github.com/lennartdeknikker/css-to-the-rescue-1920/blob/master/wiki-resources/screenshot.png)
 As an assignment for the course css to the rescue as part of the minor Web Development at the Amsterdam University of Applied Sciences I created this page showing information on the camps you'll pass when climbing the Mount Everest. As part of the assignment I was bound to some restrictions.
 - JavaScript is not allowed.
 - Use of classes is not allowed. We have to work with the so called selector first strategy. This means that you have to use a wide variety of CSS selectors.

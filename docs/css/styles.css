@@ -561,6 +561,7 @@ input[type="checkbox"]:first-child:checked
     transform: skewX(0) rotate(0);
   }
 }
+
 /* makes the flag go up */
 @keyframes flag-up {
   from {
